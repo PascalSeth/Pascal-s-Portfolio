@@ -113,19 +113,19 @@ export const projects = [
   },
   {
     id: 6,
-    title: "E-commerce",
-    des: "E-commerce",
-    img: "/projects/ecommerce.png",
+    title: "Car Hub",
+    des: "E-commerce For Cars",
+    img: "/carhub.png",
     iconLists: ["/re.svg", "/tail.svg", ],
-    link: "https://ecommerceshop-zeta.vercel.app/"
+    link: "https://pascalcarhub.netlify.app/"
   },
   {
     id: 7,
-    title: "AgriKeeper",
-    des: "AgriKeeper E-commerce",
-    img: "/projects/akrikeep.png",
+    title: "Bird Notion",
+    des: "Inspired from Notion Website",
+    img: "/birdnotion.png",
     iconLists: ["/re.svg", "/tail.svg", ],
-    link: "https://afrikeep.vercel.app/"
+    link: "https://bird-notion.netlify.app/"
   },
   {
     id: 8,
@@ -134,7 +134,15 @@ export const projects = [
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/ui.aiimg.com"
-  }
+  },
+    {
+    id: 9,
+    title: "Travel App",
+    des: "Want to Travel Check out this Landing Page",
+    img: "/travelApp.png",
+    iconLists: ["/re.svg", "/tail.svg", ],
+    link: "https://travelapplanding.netlify.app/"
+  },
 ];
 
   export const testimonials = [
