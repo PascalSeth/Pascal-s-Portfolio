@@ -55,9 +55,10 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Pascal, a Next.js Developer based in Ghana.
-          </p>
+     <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+  Hello! I'm Pascal, a passionate Next.js Developer from Ghana. I specialize in creating dynamic and responsive web applications with a keen eye for design and user experience. With extensive experience in both front-end and back-end development, I enjoy crafting seamless interfaces using technologies like React, Next.js, and Tailwind CSS. On the back-end, I work with Node.js, Express, and Prisma to build robust and scalable server-side solutions. Let's build something amazing together!
+</p>
+
 
           <a href="#about">
             <MagicButton
