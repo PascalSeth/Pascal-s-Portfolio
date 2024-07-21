@@ -5,64 +5,103 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    /* Light background */
+    --foreground: 240 5% 15%;
+    /* Dark text */
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    /* Card background */
+    --card-foreground: 240 5% 15%;
+    /* Card text */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    /* Popover background */
+    --popover-foreground: 240 5% 15%;
+    /* Popover text */
 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 210 100% 50%;
+    /* Primary color (Sky Blue) */
+    --primary-foreground: 0 0% 100%;
+    /* Primary text (White) */
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 240 8% 60%;
+    /* Secondary color (Gray) */
+    --secondary-foreground: 240 5% 10%;
+    /* Secondary text (Dark Gray) */
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 240 6% 80%;
+    /* Muted color (Light Gray) */
+    --muted-foreground: 240 5% 30%;
+    /* Muted text (Dark Gray) */
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 300 70% 50%;
+    /* Accent color (Purple) */
+    --accent-foreground: 0 0% 100%;
+    /* Accent text (White) */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 70% 60%;
+    /* Destructive color (Red) */
+    --destructive-foreground: 0 0% 100%;
+    /* Destructive text (White) */
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
+    --border: 240 5% 85%;
+    /* Border color */
+    --input: 240 5% 90%;
+    /* Input background */
+    --ring: 240 6% 70%;
+    /* Ring color */
 
     --radius: 0.5rem;
+    /* Border radius */
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 240 5% 10%;
+    /* Dark mode background */
+    --foreground: 0 0% 100%;
+    /* Dark mode text */
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 240 5% 15%;
+    /* Dark mode card background */
+    --card-foreground: 0 0% 100%;
+    /* Dark mode card text */
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 240 5% 15%;
+    /* Dark mode popover background */
+    --popover-foreground: 0 0% 100%;
+    /* Dark mode popover text */
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: 210 100% 90%;
+    /* Dark mode primary color */
+    --primary-foreground: 240 5% 15%;
+    /* Dark mode primary text */
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 240 5% 20%;
+    /* Dark mode secondary color */
+    --secondary-foreground: 0 0% 100%;
+    /* Dark mode secondary text */
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 240 5% 20%;
+    /* Dark mode muted color */
+    --muted-foreground: 240 5% 70%;
+    /* Dark mode muted text */
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 300 60% 70%;
+    /* Dark mode accent color */
+    --accent-foreground: 0 0% 100%;
+    /* Dark mode accent text */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 60% 50%;
+    /* Dark mode destructive color */
+    --destructive-foreground: 0 0% 100%;
+    /* Dark mode destructive text */
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --border: 240 5% 20%;
+    /* Dark mode border color */
+    --input: 240 5% 25%;
+    /* Dark mode input background */
+    --ring: 240 5% 80%;
+    /* Dark mode ring color */
   }
 }
 
@@ -70,9 +109,11 @@
   * {
     @apply border-border !scroll-smooth;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   button {
     @apply active:outline-none;
   }
@@ -81,5 +122,29 @@
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .grid-center {
+    @apply grid place-items-center;
+  }
+
+  .shadow-lg {
+    @apply shadow-lg;
+  }
+
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-accent;
+  }
+
+  .text-accent {
+    @apply text-accent;
+  }
+
+  .border-accent {
+    @apply border border-accent;
   }
 }
