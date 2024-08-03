@@ -104,14 +104,6 @@ export const projects = [
     link: "https://main--travelguidets.netlify.app/"
   },
   {
-    id: 5,
-    title: "Admin Dashboard",
-    des: "Admin Dashboard Landing Page",
-    img: "/projects/admin.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://mycleanapp.netlify.app/"
-  },
-  {
     id: 6,
     title: "Car Hub",
     des: "E-commerce For Cars",
@@ -142,6 +134,30 @@ export const projects = [
     img: "/travelApp.png",
     iconLists: ["/re.svg", "/tail.svg", ],
     link: "https://travelapplanding.netlify.app/"
+  },
+        {
+    id: 9,
+    title: "Dharma Kitchen",
+    des: "Want a restaurant Online Check out this Landing Page",
+    img: "/dharma.png",
+    iconLists: ["/re.svg", "/tail.svg", ],
+    link: "https://thedharmakitchen.netlify.app/"
+  },
+      {
+    id: 9,
+    title: "Fresco Restaurant",
+    des: "Want a restaurant Online Check out this Landing Page",
+    img: "/fresco.png",
+    iconLists: ["/re.svg", "/tail.svg", ],
+    link: "https://fresco-food.netlify.app/"
+  },
+        {
+    id: 9,
+    title: "EliteExclusiveApparrels",
+    des: "Small Scale Clothing Shop For Men Women AND Kids with working Dashboard(add /dashboard to URL but u must be signed in to use this)",
+    img: "/apparel.png",
+    iconLists: ["/re.svg", "/tail.svg", ],
+    link: "https://eliltexclusiveapparels.netlify.app/"
   },
 ];
 
